@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url('https://img2.goodfon.com/wallpaper/nbig/2/9a/metallica-lars-ulrich-lars.jpg');
+    background-size: cover;
+    /* background-position-y: bottom;
+    display: flex; */
+}
+
+#header h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(5, 50, 255);
+    background-color: rgba(1, 255, 200, 0.425);
+    padding: 8px 80px;
+    border-radius: 35%;
+    animation-name: color;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+
+.name {
+    font-size: 16px;
+    color: rgb(31, 7, 243);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+@keyframes color {
+    0% {
+        background-color: rgba(1, 255, 200, 0.555);
+    }
+
+    20% {
+        background-color: rgba(60, 255, 21, 0.877);
+    }
+
+    40% {
+        background-color: rgba(187, 89, 243, 0.959);
+    }
+
+    60% {
+        background-color: rgb(243, 239, 13);
+    }
+
+    80% {
+        background-color: rgba(218, 29, 202, 0.986);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 0, .5);
+    }
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    padding: 20px 50px 0px 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 35px;
+    text-align: center;
+}
+
+.key {
+    border: 2px solid rgb(4, 250, 24);
+    padding: 2px 50px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255, 21, 21);
+    background-color: rgba(1, 255, 200, 0.555);
+    min-width: 100px;
+    min-height: 70px;
+    border-radius: 15px;
+    animation-name: color;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+}
+
+.key.active {
+    background: rgba(255, 0, 0, .5);
+    animation-name: color;
+    animation-duration: 5ms;
+    animation-iteration-count: infinite;
+}
+
+#start-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#start {
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+    font-size: medium;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+#footer {
+    background-color: black;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
